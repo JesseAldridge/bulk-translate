@@ -1,0 +1,1312 @@
+[
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// sampler interface",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// LDA subject sampling of the document",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// SentenceLDA subject sampling for the document",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Based on the Metropolis-Hastings sampler implementation, including the implementation of two models of LDA and SentenceLDA",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Construct alias table based on LDA model parameters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Subject sampling of a word in the document, returning the topic ID corresponding to the sampling result",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Sample a topic in the document and return the topic ID corresponding to the sampled result",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Use the Metroplis-Hastings method to propagate a topic id for the word of the current word id",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// topic subscript mapping",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Store the alias results for each word using the VoseAlias \u200b\u200bMethod (word-proposal no a priori parameter part)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// store the sum of the probabilities under each topic of each word (word-proposal no a priori parameter part)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Store the alias result in the a priori parameter section using the VoseAlias \u200b\u200bMethod (word-proposal a priori parameter part)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Store the sum of the probabilities under each topic of the a priori parameter (word-proposal prior parameter part)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Metropolis-Hastings steps, default is 2",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Gibbs sampler implements sampling algorithms for both LDA and SentenceLDA models",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// LDA topic sampling for document input, theme results are saved in doc",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Sentence each sentence of the document using the SentenceLDA model and save the result in doc",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The SentenceLDA sampling algorithm takes into account the accuracy of numerical calculations and samples the formula",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// word breaker base class",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Simple version of FMM tokenizer, only for theme model application Demo, non-real business application scenario use",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// NOTE: The tokenizer only recognizes words in the vocabulary in the topic model.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Simple segmentation of the input text string, the result is stored in result",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Check if the word is in the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// load the word breaker dictionary, share a dictionary with the theme model",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Check if the character is an English character",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Returns the lowercase characters of the corresponding characters, if there is no corresponding lowercase characters, return the original characters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// maximum length of words in the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Dictionary data structure",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// sampler type",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Inference Engine supports topic inference for both LDA and Sentence-LDA models, both models use the same storage format",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Includes both Gibbs sampling and Metroplis-Hastings sampling algorithms",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The Metroplis-Hastings sampling algorithm is used by default",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / In the input of the input LDA subject inference, the output is stored in the doc",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// where input is a collection of strings after word segmentation",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// SentenceLDA topic inference for input input, output is stored in doc",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// where input is a collection of sentences",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// REQUIRE: The total number of rounds needs to be greater than the number of burn-in iterations. The larger the total number of rounds, the smoother the distribution of the resulting document topics.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// REQUIRE: The total number of rounds needs to be greater than the number of burn-in iterations. The larger the total number of rounds, the smoother the distribution of the resulting document topics.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Return model pointer to get model parameters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Returns the model type, indicated as LDA or SetennceLDA",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Model structure pointer",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// sampler pointer, scope only in the InferenceEngine",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// OOV: out of vocabulary, indicating that the word is not in the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// theme model vocabulary data structure",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Mainly responsible for mapping between plaintext words and word ids, if the word is not in the vocabulary, the range is OOV(-1)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// range given the word id of the plaintext word",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// load the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the vocabulary size",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Clear text to id mapping",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// The basic data structure of the theme, including the id and the corresponding probability",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Return prob > t.prob; // prioritize by topic probability from large to small",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// LDA document storage base unit, containing the word id and the corresponding topic id",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// The SentenceLDA document stores the basic unit, containing the word id of the sentence and the corresponding topic id",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// LDA model inference result storage structure",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Initialize the document structure according to the number of topics",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Add new words",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Set the subject of the index word in the document to new_topic and update the corresponding document topic distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Configuration document a priori parameter alpha",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Returns the number of words in the document",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Returns the document theme distribution in sparse format, sorted by topic probability from large to small",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// NOTE: This interface returns results for sparseness, ignoring the role of a priori parameters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Returns the document topic distribution in a dense format, taking into account the results of the a priori parameters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Accumulate the results of each round of sampling to get a distribution closer to the true a posteriori",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// number of topics",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// cumulative number of sampling rounds",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// document prior parameter alpha",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// inference result storage structure",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The topic sum of the document in one round of sampling",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0//The cumulative result of topic sum in multiple rounds of sampling",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Inherited from LDADoc, added add_sentence interface",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Add a sentence",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Set the subject of the index sentence in the document to new_topic and update the corresponding document topic distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the number of document sentences",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The document is a collection of sentences, each sentence has a corresponding theme",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// return a random number engine that works under multithreading",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Fixed random seed and reset distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0Distribution.reset(); // Reset the distribution so that the next sample generated from the distribution does not depend on the state of the past generation",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Returns a random floating point number between min~max, which returns a floating point number of 0~1 by default.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// returns an integer floating point number between [0, k - 1]",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Simple version of the split function, split by separator",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// subject count, key is topic id, value is count value",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Multiple subject counts constitute topic distribution TopicDist = Topic Distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "/ / The theme model model storage structure, including the vocabulary and word topic count two distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// where LDA and SentenceLDA use the same model storage format",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// load word topic count and vocabulary file",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Returns the value of a parameter in a model under a topic, because the model uses sparse storage, if not found, returns 0",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// binary search",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the topic distribution of a word",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Returns the topic sum parameter of the specified topic id",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the topic sum parameter vector",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0/ / Load the word topic parameter",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// word topic model parameters",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The sum of the counts for each dimension topic corresponding to the word topic",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// The vocabulary data structure corresponding to the model",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// number of topics",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// theme model hyperparameter",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// model type",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "/ / Store candidate words and corresponding distance",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Topical Word Embedding (TWE) model class",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Includes model loading and embedding acquisition",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Load Topical Word Embedding",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the subject's embedding based on the topic id",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// embedding to return words according to plaintext",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the K words closest to the word",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the K words closest to the topic",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Check if the current word is in the TWE model",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// return the number of topics",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// TWE model embeeding size",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// vocabulary size of word embedding in TWE",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// semantic matching calculation indicator class",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Calculate the length of the vector, the emebdding is passed in",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// NOTE: Vector operation acceleration can be performed with SSE, where the code readability is not optimized here.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Calculate the cosine similarity of two embeddings",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// NOTE: Vector operation acceleration can be performed with SSE, where the code readability is not optimized here.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Use similarity between likelihood values \u200b\u200bbetween short text and long text",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// count words in the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Calculate the similarity between short and long text based on Topical Word Embedding (TWE)",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Enter short text plaintext segmentation results, long text topic distribution, TWE model, return long text and short text semantic similarity",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0If (short_text_length == 0) { // If the words in the short text are not in the vocabulary",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Return result / short_text_length; // normalize for short text length",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// REQUIRE: The two parameter dimensions passed in must be the same",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// REQUIRE: The two parameter dimensions passed in must be the same",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// Detect that the distribution value is less than epsilon",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// REQUIRE: The two parameter dimensions passed in must be the same",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// NOTE: Vector operation acceleration can be performed with SSE, where the code readability is not optimized here.",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "        // 1/\u221a2 = 0.7071067812",
+          "detectedSourceLanguage": "en"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// Vose's Alias \u200b\u200bMethod numerically stable version implementation",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "// For more details, please refer to http://www.keithschwarz.com/darts-dice-coins/",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Initialize the alias table based on the input distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// Generate sample samples from a given distribution",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "translations": [
+        {
+          "translatedText": "\u00a0\u00a0\u00a0\u00a0// discretely distributed dimensions",
+          "detectedSourceLanguage": "zh-CN"
+        }
+      ]
+    }
+  }
+]

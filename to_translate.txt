@@ -1,0 +1,131 @@
+// 采样器的接口
+    // 对文档进行LDA主题采样
+    // 对文档进行SentenceLDA主题采样
+// 基于Metropolis-Hastings的采样器实现，包含LDA和SentenceLDA两个模型的实现
+    // 根据LDA模型参数构建alias table
+    // 对文档中的一个词进行主题采样, 返回采样结果对应的主题ID
+    // 对文档中的一个句子进行主题采样, 返回采样结果对应的主题ID
+    // 对当前词id的单词使用Metroplis-Hastings方法proprose一个主题id
+    // 主题的下标映射
+    // 存放每个单词使用VoseAlias Method构建的alias结果(word-proposal无先验参数部分)
+    // 存放每个单词各个主题下概率之和(word-proposal无先验参数部分)
+    // 存放先验参数部分使用VoseAlias Method构建的alias结果(word-proposal先验参数部分)
+    // 存放先验参数各个主题下概率之和(word-proposal先验参数部分)
+    // Metropolis-Hastings steps, 默认值为2
+// 吉布斯采样器，实现了LDA和SentenceLDA两种模型的采样算法
+    // 对文档输入进行LDA主题采样，主题结果保存在doc中
+    // 使用SentenceLDA模型对文档每个句子进行采样, 结果保存在doc中
+    // 其中SentenceLDA采样算法考虑了数值计算的精度问题，对公式进行了采样
+// 分词器基类
+// 简单版本FMM分词器，仅用于主题模型应用Demo，非真实业务应用场景使用
+// NOTE: 该分词器只识别主题模型中词表的单词
+    // 对输入text字符串进行简单分词，结果存放在result中
+    // 检查word是否在词表中
+    // 加载分词词典, 与主题模型共享一套词典
+    // 检查字符是否为英文字符
+    // 返回对应字符的小写字符，如无对应小写字符则返回原字符
+    // 词表中单词最大长度
+    // 词典数据结构
+// 采样器类型
+// Inference Engine 支持LDA 和Sentence-LDA两种模型的主题推断, 两种模型使用相同的存储格式
+// 同时包含吉布斯采样和Metroplis-Hastings两种采样算法
+    // 默认使用 Metroplis-Hastings 采样算法
+    // 对input的输入进行LDA主题推断，输出结果存放在doc中
+    // 其中input是分词后字符串的集合
+    // 对input的输入进行SentenceLDA主题推断，输出结果存放在doc中
+    // 其中input是句子的集合
+    // REQUIRE: 总轮数需要大于burn-in迭代轮数, 其中总轮数越大，得到的文档主题分布越平滑
+    // REQUIRE: 总轮数需要大于burn-in迭代轮数, 其中总轮数越大，得到的文档主题分布越平滑
+    // 返回模型指针以便获取模型参数
+    // 返回模型类型, 指明为LDA还是SetennceLDA
+    // 模型结构指针
+    // 采样器指针, 作用域仅在InferenceEngine
+// OOV: out of vocabulary, 表示单词不在词表中
+// 主题模型词表数据结构
+// 主要负责明文单词到词id之间的映射, 若单词不在词表中，则范围OOV(-1)
+    // 范围给定明文单词的词id
+    // 加载词表
+    // 返回词表大小
+    // 明文到id的映射
+// 主题的基本数据结构，包含id以及对应的概率
+        return prob > t.prob; // 优先按照主题概率从大到小排序
+// LDA文档存储基本单元，包含词id以及对应的主题id
+// SentenceLDA文档存储基本单元，包含句子的词id以及对应的主题id
+// LDA模型inference结果存储结构
+    // 根据主题数初始化文档结构
+    // 添加新的单词
+    // 对文档中第index个单词的主题置为new_topic, 并更新相应的文档主题分布
+    // 配置文档先验参数alpha
+    // 返回文档中词的数量
+    // 返回稀疏格式的文档主题分布, 默认按照主题概率从大到小的排序
+    // NOTE: 这一接口返回结果为了稀疏化，忽略了先验参数的作用
+    // 返回稠密格式的文档主题分布, 考虑了先验参数的结果
+    // 对每轮采样结果进行累积, 以得到一个更逼近真实后验的分布
+    // 主题数
+    // 累积的采样轮数
+    // 文档先验参数alpha
+    // inference 结果存储结构
+    // 文档在一轮采样中的topic sum
+    // topic sum在多轮采样中的累积结果
+// 继承自LDADoc，新增了add_sentence接口
+    // 新增句子
+    // 对文档中第index个句子的主题置为new_topic, 并更新相应的文档主题分布
+    // 返回文档句子数量
+    // 文档为句子的集合，每个句子有一个对应主题
+// 返回一个可在多线程下工作的随机数引擎
+// 固定随机种子并重置分布
+    distribution.reset(); // 重置分布，使下一次从分布中生成的样本不依赖过去的生成的状态
+// 返回min~max之间的随机浮点数, 默认返回0~1的浮点数
+// 返回[0, k - 1]之间的整型浮点数
+// 简单版本的split函数, 按照分隔符进行分割
+// 主题计数，key为topic id，value是计数值
+// 多个主题计数构成主题分布 TopicDist = Topic Distribution
+// 主题模型模型存储结构，包含词表和word topic count两分布
+// 其中LDA和SentenceLDA使用同样的模型存储格式
+    // 加载word topic count以及词表文件
+    // 返回模型中某个词在某个主题下的参数值，由于模型采用稀疏存储，若找不到则返回0
+        // 二分查找
+    // 返回某个词的主题分布
+    // 返回指定topic id的topic sum参数
+    // 返回topic sum参数向量
+    // 加载word topic参数
+    // word topic 模型参数
+    // word topic对应的每一维主题的计数总和
+    // 模型对应的词表数据结构
+    // 主题数
+    // 主题模型超参数
+    // 模型类型
+// 存储候选词以及对应距离
+// Topical Word Embedding (TWE) 模型类
+// 包括了模型的加载及embedding的获取
+    // 加载Topical Word Embedding
+    // 根据topic id返回topic的embedding
+    // 根据明文返回词的embedding
+    // 返回距离词最近的K个词
+    // 返回离主题最近的K个词
+    // 检查当前词是否在TWE模型中
+    // 返回主题数
+    // TWE模型embeeding size
+    // TWE中word embedding的词表大小
+// 语义匹配计算指标类
+    // 计算向量的长度，传入的是embedding
+    // NOTE: 可用SSE进行向量运算加速，此处为了代码可读性不进行优化
+    // 计算两个embedding的余弦相似度
+        // NOTE: 可用SSE进行向量运算加速，此处为了代码可读性不进行优化
+    // 使用短文本到长文本之间的似然值表示之间的相似度
+            // 统计在词表中的单词
+    // 基于Topical Word Embedding (TWE) 计算短文本与长文本的相似度
+    // 输入短文本明文分词结果，长文本主题分布，TWE模型，返回长文本与短文本语义相似度
+        if (short_text_length == 0) { // 如果短文本中的词均不在词表中
+        return result / short_text_length; // 针对短文本长度进行归一化
+    // REQUIRE: 传入的两个参数维度须一致
+    // REQUIRE: 传入的两个参数维度须一致
+        // 检测分布值小于epsilon的情况
+    // REQUIRE: 传入的两个参数维度须一致
+        // NOTE: 可用SSE进行向量运算加速，此处为了代码可读性不进行优化
+        // 1/√2 = 0.7071067812
+// Vose's Alias Method 数值稳定版本实现
+// 更多的具体细节可以参考 http://www.keithschwarz.com/darts-dice-coins/
+    // 根据输入分布初始化alias table
+    // 从给定分布中生成采样样本
+    // 离散分布的维度
